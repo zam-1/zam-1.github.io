@@ -18,14 +18,47 @@
             background-image: url("tausta.jpg");
             background-position: top;
             height: 100dvh;
+        }
 
+        .blackBox {
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.732) 33%, rgb(0, 0, 0) 66%);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 30%;
+        }
+
+        .navButton {
+            width: 80px;
+            height: 30px;
+            background-color: green;
+            line-height: 30px;
+            text-align: center;
+            margin: 40px;
+        }
+
+        .navButton a:link {
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
     <div class="tausta">
-
+        <div class="blackBox">
+            <div class="navButton">
+                <a href="www.hs.fi">Gallery</a>
+            </div>
+            <div class="navButton">
+                <a href="www.hs.fi">Gallery</a>
+            </div>
+            <div class="navButton">
+                <a href="www.hs.fi">Gallery</a>
+            </div>
+        </div>
     </div>
 </body>
 
