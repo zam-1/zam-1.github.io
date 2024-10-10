@@ -16,34 +16,33 @@
         }
 
         .tausta {
+            display: flex;
             background-image: url("background.jpg");
             background-position: top;
             background-size: cover;
             height: 100dvh;
         }
 
-        .blackBox {
+        .buttonC {
             display: flex;
-            justify-content: space-evenly;
-            align-items: end;
-            background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.732) 33%, rgb(0, 0, 0) 66%);
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            height: 30%;
+            flex-direction: column;
+            background-color: green;
+            width: 50vh;
+            height: fit-content;
+            
         }
 
         .navButton {
-            border: 3px solid silver;
-            border-radius: 15px;
-            width: 100px;
-            height: 40px;
-            background-color: darkolivegreen;
-            line-height: 40px;
+            align-self: flex-end;
+            border-radius: 2em;
+            width: 10em;
+            height: 3em;
+            margin: 1em;
+            background-color: gray;
+            line-height: 3em;
             text-align: center;
-            margin-bottom: 2rem;
-            font-size: 16px;
-            font-family: "Tahoma";
+            font-size: 20px;
+            font-family: "Brush Script MT";
             text-decoration: none;
             color: black;
         }
@@ -68,7 +67,7 @@
 
 <body>
     <div class="tausta">
-        <div class="blackBox">
+        <div class="buttonC">
             <a class="navButton" href="https://www.hs.fi">Gallery</a>
             <a class="navButton" href="https://www.hs.fi">Gear</a>
             <a class="navButton" href="https://www.hs.fi">Comment</a>
