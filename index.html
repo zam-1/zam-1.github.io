@@ -26,18 +26,19 @@
         .buttonC {
             display: flex;
             flex-direction: column;
-            width: 100vh;
+            width: 100vw;
             height: fit-content;
+            background-color: green;
 
         }
 
         .navButton {
             align-self: flex-end;
             border-radius: 2em;
-            width: 18vh;
+            width: 45vw;
             height: 5vh;
             margin-top: 2vh;
-            margin-right: 4vh;
+            margin-right: 4vw;
             background-color: rgba(0, 13, 201, 0.397);
             line-height: 5vh;
             text-align: center;
@@ -48,19 +49,21 @@
         }
 
         .navButton:active {
-            box-sizing: border-box;
             background-color: blue;
-            border: 3px solid white;
         }
 
         @media screen and (min-width: 600px) {
             .tausta {
                 background-image: url("tausta.jpg");
             }
-
+            .buttonC {
+                flex-direction: initial;
+                justify-content: center;
+                width: 
+            }
             .navButton {
-                border: 3px solid white;
-                background-color: deepskyblue;
+                background-color: rgba(0, 13, 201, 0.397);
+                align-self: 
             }
         }
     </style>
