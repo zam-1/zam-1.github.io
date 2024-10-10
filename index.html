@@ -21,6 +21,7 @@
             background-position: top;
             background-size: cover;
             height: 100dvh;
+            flex-direction: column;
         }
 
         .buttonC {
@@ -50,6 +51,26 @@
             background-color: blue;
         }
 
+        .contactC {
+            display: flex;
+            justify-content: center;
+
+            height: 88vh;
+            width: 100vw;
+        }
+
+        .contact {
+            align-self: flex-end;
+            background-color: rgba(0, 13, 201, 0.76);
+            width: 30vw;
+            text-align: center;
+            font-size: 22px;
+            font-family: "courier";
+            text-decoration: none;
+            color: white;
+            margin-bottom: 1vh;
+        }
+
         @media screen and (min-width: 600px) {
             .tausta {
                 background-image: url("tausta.jpg");
@@ -76,6 +97,10 @@
             <a class="navButton" href="https://www.hs.fi">Gallery</a>
             <a class="navButton" href="https://www.hs.fi">Gear</a>
             <a class="navButton" href="https://www.hs.fi">Blog</a>
+        </div>
+        <div class="contactC">
+            <a class="contact" href="https://www.facebook.com">Contact me: Email</a></p>
+
         </div>
     </div>
 </body>
