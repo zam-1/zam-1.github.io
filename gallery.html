@@ -25,10 +25,14 @@
         }
 
         .navBar {
+            box-sizing: border-box;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             background-color: rgba(87, 87, 87, 0.63);
+            border-left: 3px double black;
+            border-right: 3px double black;
+            border-top: 3px double black;
             width: 100vw;
             height: 4vh;
 
@@ -47,16 +51,28 @@
             text-align: center;
         }
 
+        .navButton:active {
+            background-color: blue;
+        }
+
         .contentC {
+            box-sizing: border-box;
             display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            overflow: scroll;
             background-color: rgba(255, 255, 255, 0.8);
+            border: 3px double black;
             height: 96vh;
             width: 100vw;
         }
 
-        .navButton:active {
-            background-color: skyblue;
+        .photo {
+            height: 300px;
+            padding: 10px;
         }
+
+
 
         @media screen and (min-width: 600px) {
             .tausta {
@@ -67,9 +83,11 @@
                 max-width: 75vw;
                 align-self: center;
             }
+
             .navButton {
                 max-width: 15vw;
             }
+
             .contentC {
                 max-width: 75vw;
                 align-self: center;
@@ -89,7 +107,26 @@
         </div>
 
         <div class="contentC">
-
+            <img class="photo" src="kuvat/kuva1s.jpg" alt="thumbnail">
+            <img class="photo" src="kuvat/kuva2s.jpg" alt="thumbnail">
+            <img class="photo" src="kuvat/kuva3s.jpg" alt="thumbnail">
+            <img class="photo" src="kuvat/kuva4s.jpg" alt="thumbnail">
+            <img class="photo" src="kuvat/kuva5s.jpg" alt="thumbnail">
+            <img class="photo" src="kuvat/kuva6s.jpg" alt="thumbnail">
+            <img class="photo" src="kuvat/kuva7s.jpg" alt="thumbnail">
+            <img class="photo" src="kuvat/kuva8s.jpg" alt="thumbnail">
+            <img class="photo" src="kuvat/kuva9s.jpg" alt="thumbnail">
+            <img class="photo" src="kuvat/kuva10s.jpg" alt="thumbnail">
+            <img class="photo" src="kuvat/kuva11s.jpg" alt="thumbnail">
+            <img class="photo" src="kuvat/kuva12s.jpg" alt="thumbnail">
+            <img class="photo" src="kuvat/kuva13s.jpg" alt="thumbnail">
+            <img class="photo" src="kuvat/kuva14s.jpg" alt="thumbnail">
+            <img class="photo" src="kuvat/kuva15s.jpg" alt="thumbnail">
+            <img class="photo" src="kuvat/kuva16s.jpg" alt="thumbnail">
+            <img class="photo" src="kuvat/kuva17s.jpg" alt="thumbnail">
+            <img class="photo" src="kuvat/kuva18s.jpg" alt="thumbnail">
+            <img class="photo" src="kuvat/kuva19s.jpg" alt="thumbnail">
+            <img class="photo" src="kuvat/kuva20s.jpg" alt="thumbnail">
         </div>
 
     </div>
