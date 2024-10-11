@@ -21,7 +21,6 @@
             background-position: top;
             background-size: cover;
             height: 100dvh;
-            justify-content: center;
             flex-direction: column;
         }
 
@@ -29,7 +28,7 @@
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            background-color: rgba(47, 47, 255, 0.3);
+            background-color: rgba(87, 87, 87, 0.63);
             width: 100vw;
             height: 4vh;
 
@@ -50,7 +49,7 @@
 
         .contentC {
             display: flex;
-            background-color: rgba(104, 102, 102, 0.850);
+            background-color: rgba(255, 255, 255, 0.8);
             height: 96vh;
             width: 100vw;
         }
@@ -62,6 +61,18 @@
         @media screen and (min-width: 600px) {
             .tausta {
                 background-image: url("tausta.jpg");
+            }
+
+            .navBar {
+                max-width: 75vw;
+                align-self: center;
+            }
+            .navButton {
+                max-width: 15vw;
+            }
+            .contentC {
+                max-width: 75vw;
+                align-self: center;
             }
         }
     </style>
