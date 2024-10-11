@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEAR</title>
+
+    <style>
+        body,
+        html {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        .tausta {
+            display: flex;
+            background-image: url("kuvat/img/background.jpg");
+            background-position: top;
+            background-size: cover;
+            height: 100dvh;
+            flex-direction: column;
+        }
+
+        .navBar {
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgba(87, 87, 87, 0.63);
+            border-left: 3px double black;
+            border-right: 3px double black;
+            border-top: 3px double black;
+            width: 100vw;
+            height: 4vh;
+
+        }
+
+        .navButton {
+            background-image: linear-gradient(to right, rgba(0, 0, 255, 0.100), rgba(0, 0, 255, 0.400), rgba(0, 0, 255, 0.100));
+            border-radius: 15px;
+            width: 25vw;
+            height: 35px;
+            line-height: 35px;
+            font-family: "Courier";
+            font-size: 22px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navButton:active {
+            background-color: blue;
+        }
+
+        .contentC {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 3px double black;
+            height: 96vh;
+            width: 100vw;
+        }
+
+        .kuva {
+            width: 90%;
+            align-self: center;
+            margin-top: 5%;
+        }
+
+        .teksti {
+            width: 90%;
+            align-self: center;
+            margin-top: 5%;
+            font-family: "Tahoma";
+            font-size: 22px;
+            text-align: center;
+        }
+
+        @media screen and (min-width: 600px) {
+            .tausta {
+                background-image: url("kuvat/img/tausta.jpg");
+            }
+
+            .navBar {
+                max-width: 75vw;
+                align-self: center;
+            }
+
+            .navButton {
+                max-width: 15vw;
+            }
+
+            .contentC {
+                max-width: 75vw;
+                align-self: center;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="tausta">
+        <div class="navBar">
+            <a class="navButton" href="index.html">Home</a>
+            <a class="navButton" href="gallery.html">Gallery</a>
+            <a class="navButton" href="https://www.hs.fi">Blog</a>
+        </div>
+
+        <div class="contentC">
+
+            <img class="kuva" src="kuvat/img/gear2.jpg">
+            <h3 class="teksti">Sony Xperia Ray</h3>
+            <p class="teksti">Vanha puhelinkamera voi olla erinomainen työkalu valokuvausreissuilla.
+                Sen kompakti koko tekee siitä kevyen ja helposti mukana kuljetettavan,
+                mikä on hyödyllistä pitkien vaellusten aikana. Vanhojen kameroiden ainutlaatuinen estetiikka voi tuoda
+                kuviin nostalgista tunnelmaa,
+                ja niiden käyttö opettaa valokuvauksen perusteita.
+            </p>
+
+            <img class="kuva" src="kuvat/img/gear1.jpg">
+            <h3 class="teksti">Sennheiser Monentum True wireless 4</h3>
+            <p class="teksti">Langattomat kuulokkeet ovat erinomaisia kumppaneita valokuvausreissuilla. Ne tarjoavat
+                käyttäjälleen vapauden liikkua ilman johtojen esteitä,
+                mikä on erityisen tärkeää, kun liikutaan luonnossa tai ahtaissa tiloissa.
+                Voit kuunnella musiikkia tai äänikirjoja, mikä auttaa keskittymään ja luomaan inspiroivaa tunnelmaa.
+            </p>
+
+            <img class="kuva" src="kuvat/img/gear3.jpg">
+            <h3 class="teksti">Pipo</h3>
+            <p class="teksti">Pipot ovat loistava lisä varustukseen valokuvausreissuilla. Ne tarjoavat suojaa kylmältä,
+                mikä on tärkeää erityisesti talvikuukausina, jotta voit keskittyä kuvaamiseen ilman häiriöitä.
+                Pipot myös auttavat pitämään hiukset paikoillaan, mikä voi olla hyödyllistä tuulisissa sääolosuhteissa.
+            </p>
+
+            <img class="kuva" src="kuvat/img/gear4.jpg">
+            <h3 class="teksti">Raha</h3>
+            <p class="teksti">Raha on tärkeä osa valokuvausreissuja, sillä se mahdollistaa tarvittavien varusteiden,
+                kuten kameroiden, objektiivien ja lisävarusteiden hankinnan. Hyvä varustus parantaa kuvien laatua ja
+                mahdollistaa luovempia kokeiluja.
+                Lisäksi raha auttaa kattamaan matkakustannuksia, kuten kuljetusta ja majoitusta, jolloin voit keskittyä
+                valokuvaamiseen.
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
